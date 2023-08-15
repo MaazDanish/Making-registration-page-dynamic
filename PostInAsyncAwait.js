@@ -19,13 +19,9 @@ const promise = async () => {
             res(posts[posts.length-1]);
         },3000)
     })
-
     // let addPost = await Promise.all([createPost,deletePost,createPostTwo]);
-
     return await Promise.all([createPost,deletePost,createPostTwo]);
 }
 promise().then( (data) => {
     console.log(data);
 })
-
-// .then( (data) => console.log(data));
